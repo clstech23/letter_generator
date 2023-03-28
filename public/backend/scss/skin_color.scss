@@ -239,7 +239,7 @@ File: scss
 
 body{
     &.dark-skin{
-        background-color: $body-dark;
+        background-color: $white;//$body-dark;
 	    color: $dark-text;        
         .navbar-nav{
             >.user-menu{

@@ -39,14 +39,13 @@ ul.b {
     <p><b>Name: </b>{{ $details->fullname }}</p> <br>
     <p><b>Address:</b> {{ $details->address }}</p> <br>
     <p>{{ $details->state }}, {{ $details->city }}, {{ $details->zipcode }}</p> <br>
-    <p> <b>DATE:</b> {{ $details->date }}</p><br><br>
-    <p><b>{{ $agencydsc }}</b></p> <br>
-    <p><b> {{$pob}}</b></p> <br>
-    <p><b>{{$adr}}</b></p> <br><br>
+    <p> <b>DATE:</b> {{ $details->date }}</p><br>
+    <p><b>{{ $details->agency  }}</b></p> <br><br>
+    
     <div> <p>To Whom It May Concern:</p></div><br>
 </div>
 <p>
-  I recently received a copy of my <b>{{ $agencydsc }}</b> credit report, and I noticed some late payments posted on my credit report:
+  I recently received a copy of my <b>{{ $details->agency }}</b> credit report, and I noticed some late payments posted on my credit report:
   </p><br>
   <p>
     &nbsp;&nbsp;&nbsp;&nbsp;List Name of the accounts with late payments along with their account numbers.

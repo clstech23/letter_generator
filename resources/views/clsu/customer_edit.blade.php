@@ -9,7 +9,7 @@
 		 <!-- Basic Forms -->
 		  <div class="box">
 			<div class="box-header with-border">
-			  <h4 class="box-title">Edit Dispute Letter Details </h4>
+			  <h4 class="box-title" style="margin-left:20px">Edit Personal Information </h4>
 			  
 			</div>
 			<!-- /.box-header -->
@@ -36,7 +36,16 @@
 	  </div>
 
  			</div> <!-- End Col md 4 -->
+			 <div class="col-md-4">
 
+				<div class="form-group">
+			   <h5>Phone Number <span class="text-danger">*</span></h5>
+			   <div class="controls">
+			<input type="text" name="mobile" value="{{ $editData->mobile }}" class="form-control" required="" > 
+			 </div>		 
+			 </div>
+			 
+					</div> <!-- End Col md 4 --> 
 
 	<div class="col-md-4">
     <div class="form-group">
@@ -50,31 +59,66 @@
 
 
 
-	<div class="col-md-4">
-
- 		<div class="form-group">
-		<h5>Phone Number <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <input type="text" name="mobile" value="{{ $editData->mobile }}" class="form-control" required="" > 
-	  </div>		 
-	  </div>
-	  
- 			</div> <!-- End Col md 4 --> 
+	
  
  			
  		</div> <!-- End 1stRow -->
 
+		 <div class="row"> <!-- 4th Row -->
 
 
+			<div class="col-md-4">
+			
+				<div class="form-group">
+					<h5>City<span class="text-danger">*</span></h5>
+					<div class="controls">
+				 <input type="city" name="city" value="{{ $editData->city }}" class="form-control" required="" > 
+				  </div>		 
+				  </div>
+				  
+						 </div> <!-- End Col md 4 --> 
+			
+						 <div class="col-md-4">
+
+							<div class="form-group">
+								<h5>State <span class="text-danger">*</span></h5>
+								<div class="controls">
+							 <input type="text" name="state" value="{{ $editData->state }}" class="form-control" required="" > 
+							  </div>		 
+							  </div>
+						  
+								 </div> <!-- End Col md 4 -->
+			
+						 
+						 <div class="col-md-4">
+			
+					  <div class="form-group">
+					<h5>Zip Code<span class="text-danger">*</span></h5>
+					<div class="controls">
+				 <input type="text" name="zipcode" value="{{ $editData->zipcode }}" class="form-control" required="" > 
+				  </div>		 
+				  </div>
+			
+						 </div> <!-- End Col md 4 -->
+			
+			
+						  
+			 
+						 
+					 </div> <!-- End 4th Row -->
 
 
+					 <div class="box-header with-border">
+						<h4 class="box-title">Account Information </h4>
+						
+					  </div>
 
 	<div class="row"> <!-- 2nd Row -->
  			
  			<div class="col-md-4">
 
 				<div class="form-group">
-					<h5>Dispute Letter <span class="text-danger">*</span></h5>
+					<h5>Letter Name<span class="text-danger">*</span></h5>
 					<div class="controls">
 				 <select name="letter" id="letter" required="" class="form-control">
 					<option value="" selected="" disabled="">Select Payment</option>
@@ -103,24 +147,47 @@
 
  			</div> <!-- End Col md 4 -->
 
+			 <div class="col-md-4">
+
+				<div class="form-group">
+					<h5>Destination: Credit Reporting Agency  <span class="text-danger">*</span></h5>
+					<div class="controls">
+			
+						<input type="text" name="agency" id="agency" value="{{ $editData->agency }}" class="form-control" required="" > 
+					</div>		 
+				  </div>
+				  
+						 </div> <!-- End Col md 4 --> 
+
+
+	
+
+			 <div class="col-md-4">
+
+				<div class="form-group">
+			  <h5>Date<span class="text-danger">*</span></h5>
+			  <div class="controls">
+		   <input type="date" name="date" value="{{ $editData->date }}" class="form-control" required="" > 
+			</div>		 
+			</div>
+	  
+				   </div> <!-- End Col md 4 -->
+</div> <!-- End 2nd Row -->
+
+
+
+<div class="row"> <!-- 3rd Row -->
 
 	<div class="col-md-4">
 
-       <div class="form-group">
-			<h5>Account Name <span class="text-danger">*</span></h5>
-			<div class="controls">
-		 <select name="account_name" id="account_name" required="" class="form-control">
-				<option value="" selected="" disabled="">Select Account Name</option>
-				<option value="COB" {{ ($editData->account_name == "COB" ? "selected": "") }}>Credit One Bank</option>
-				<option value="BOA" {{ ($editData->account_name == "BOA" ? "selected": "") }}>Bank Of America</option>
-				<option value="NFD" {{ ($editData->account_name == "NFD" ? "selected": "") }}>Navy Fed</option>
-			</select>
-		  </div>		 
-		  </div>
-	  
- 			</div> <!-- End Col md 4 -->
-
-
+		<div class="form-group">
+			 <h5>Account Name <span class="text-danger">*</span></h5>
+			 <div class="controls">
+				 <input type="text" name="account_name" id="account_name" value="{{ $editData->account_name }}" class="form-control" required="" > 
+		   </div>		 
+		   </div>
+	   
+			  </div> <!-- End Col md 4 -->
 
 	<div class="col-md-4">
 
@@ -133,103 +200,19 @@
 		  </div>
 	  
  			</div> <!-- End Col md 4 --> 
- 
- 			
- 		</div> <!-- End 2nd Row -->
-
-
-
-<div class="row"> <!-- 3rd Row -->
-
-
-<div class="col-md-4">
-
-	<div class="form-group">
-		<h5>Credit Reporting Agency <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <select name="agency" id="agency" required="" class="form-control">
-			<option value="" selected="" disabled="">Select Credit Reporting Agency</option>
-			<option value="EXP" {{ ($editData->agency == "EXP" ? "selected": "") }}>Experian</option>
-			<option value="EQF" {{ ($editData->agency == "EQF" ? "selected": "") }}>Equifax Information Services LLC</option>
-			<option value="TRSU" {{ ($editData->agency == "TRSU" ? "selected": "") }}>TransUnion LLC Consumer Dispute Center</option>
-		</select>
-	  </div>		 
-	  </div>
-	  
- 			</div> <!-- End Col md 4 --> 
-
 
 
  			
- 			<div class="col-md-4">
-
- 		 <div class="form-group">
-		<h5>Date<span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <input type="date" name="date" value="{{ $editData->date }}" class="form-control" required="" > 
-	  </div>		 
-	  </div>
-
- 			</div> <!-- End Col md 4 -->
+ 			
 
 
-	<div class="col-md-4">
-
-		<div class="form-group">
-			<h5>State <span class="text-danger">*</span></h5>
-			<div class="controls">
-		 <input type="text" name="state" value="{{ $editData->state }}" class="form-control" required="" > 
-		  </div>		 
-		  </div>
-	  
- 			</div> <!-- End Col md 4 --> 
+	
  
  			
  		</div> <!-- End 3rd Row -->
 
 
-		 <div class="row"> <!-- 4th Row -->
-
-
-			<div class="col-md-4">
-			
-				<div class="form-group">
-					<h5>City<span class="text-danger">*</span></h5>
-					<div class="controls">
-				 <input type="city" name="city" value="{{ $editData->city }}" class="form-control" required="" > 
-				  </div>		 
-				  </div>
-				  
-						 </div> <!-- End Col md 4 --> 
-			
-			
-			
-						 
-						 <div class="col-md-4">
-			
-					  <div class="form-group">
-					<h5>Zip Code<span class="text-danger">*</span></h5>
-					<div class="controls">
-				 <input type="text" name="zipcode" value="{{ $editData->zipcode }}" class="form-control" required="" > 
-				  </div>		 
-				  </div>
-			
-						 </div> <!-- End Col md 4 -->
-			
-			
-				<div class="col-md-4">
-			
-					<!--div class="form-group">
-						<h5>Father's Name <span class="text-danger">*</span></h5>
-						<div class="controls">
-					 <input type="text" name="fname" class="form-control" required="" > 
-					  </div>		 
-					  </div-->
-				  
-						 </div> <!-- End Col md 4 --> 
-			 
-						 
-					 </div> <!-- End 4th Row -->
+		
 
  
   

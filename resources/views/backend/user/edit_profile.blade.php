@@ -32,7 +32,7 @@
 	<div class="col-md-6" >
 
 		<div class="form-group">
-		<h5>User Name <span class="text-danger">*</span></h5>
+		<h5>First Name <span class="text-danger">*</span></h5>
 		<div class="controls">
 	 <input type="text" name="name" class="form-control" value="{{ $editData->name }}" required="">  </div>
 		 
@@ -41,15 +41,15 @@
 	</div> <!-- End Col Md-6 -->
 
 	<div class="col-md-6" >
-		
- <div class="form-group">
-		<h5>User Email <span class="text-danger">*</span></h5>
+
+		<div class="form-group">
+		<h5>Last Name <span class="text-danger">*</span></h5>
 		<div class="controls">
-	 <input type="email" name="email" class="form-control" value="{{ $editData->email }}" required="">  </div>
+	 <input type="text" name="fname" class="form-control" value="{{ $editData->fname }}" required="">  </div>
 		 
 	</div>
 
-	</div><!-- End Col Md-6 -->
+	</div> <!-- End Col Md-6 -->
 	
 
 </div> <!-- End Row -->
@@ -69,14 +69,14 @@
 
 	<div class="col-md-6" >
 		
- <div class="form-group">
-		<h5>User Address <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <input type="text" name="address" class="form-control" value="{{ $editData->address }}" required="">  </div>
-		 
-	</div>
-
-	</div><!-- End Col Md-6 -->
+		<div class="form-group">
+			   <h5>User Email <span class="text-danger">*</span></h5>
+			   <div class="controls">
+			<input type="email" name="email" class="form-control" value="{{ $editData->email }}" required="">  </div>
+				
+		   </div>
+	   
+		   </div><!-- End Col Md-6 -->
 	
 
 </div> <!-- End Row -->
@@ -88,6 +88,7 @@
 
 
 <div class="row">
+	
 	<div class="col-md-6" >
 
 		<div class="form-group">
@@ -103,29 +104,152 @@
           </div>
 	</div> <!-- End Col Md-6 -->
 
-	<div class="col-md-6" >		
-	<div class="form-group">
-		<h5>Profile Image <span class="text-danger">*</span></h5>
-		<div class="controls">
-	 <input type="file" name="image" class="form-control" id="image" >  </div>
-	 </div>
-
-	 	<div class="form-group">
-		<div class="controls">
-	<img id="showImage" src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/no_image.jpg') }}" style="width: 100px; width: 100px; border: 1px solid #000000;"> 
-
-	 </div>
-	 </div>
-
-
-	</div><!-- End Col Md-6 -->
+			<div class="col-md-6" >
+		
+				<div class="form-group">
+					   <h5>User Address <span class="text-danger">*</span></h5>
+					   <div class="controls">
+					<input type="text" name="address" class="form-control" value="{{ $editData->address }}" required="">  </div>
+						
+				   </div>
+			   
+				   </div><!-- End Col Md-6 -->
+	
 	
 
 </div> <!-- End Row -->
 
+<div class="row"> <!-- 3rd Row -->
 
 
- 
+	<div class="col-md-4">
+	
+		<div class="form-group">
+			<h5>City<span class="text-danger">*</span></h5>
+			<div class="controls">
+		 <input type="city" name="city" class="form-control" required="" value="{{ $editData->city }}" > 
+		  </div>		 
+		  </div>
+		  
+				 </div> <!-- End Col md 4 --> 
+	
+				 <div class="col-md-4">
+    		<?php 
+
+				/*$states = array(
+						'AL'=>'Alabama',
+						'AK'=>'Alaska',
+						'AZ'=>'Arizona',
+						'AR'=>'Arkansas',
+						'CA'=>'California',
+						'CO'=>'Colorado',
+						'CT'=>'Connecticut',
+						'DE'=>'Delaware',
+						'DC'=>'District of Columbia',
+						'FL'=>'Florida',
+						'GA'=>'Georgia',
+						'HI'=>'Hawaii',
+						'ID'=>'Idaho',
+						'IL'=>'Illinois',
+						'IN'=>'Indiana',
+						'IA'=>'Iowa',
+						'KS'=>'Kansas',
+						'KY'=>'Kentucky',
+						'LA'=>'Louisiana',
+						'ME'=>'Maine',
+						'MD'=>'Maryland',
+						'MA'=>'Massachusetts',
+						'MI'=>'Michigan',
+						'MN'=>'Minnesota',
+						'MS'=>'Mississippi',
+						'MO'=>'Missouri',
+						'MT'=>'Montana',
+						'NE'=>'Nebraska',
+						'NV'=>'Nevada',
+						'NH'=>'New Hampshire',
+						'NJ'=>'New Jersey',
+						'NM'=>'New Mexico',
+						'NY'=>'New York',
+						'NC'=>'North Carolina',
+						'ND'=>'North Dakota',
+						'OH'=>'Ohio',
+						'OK'=>'Oklahoma',
+						'OR'=>'Oregon',
+						'PA'=>'Pennsylvania',
+						'RI'=>'Rhode Island',
+						'SC'=>'South Carolina',
+						'SD'=>'South Dakota',
+						'TN'=>'Tennessee',
+						'TX'=>'Texas',
+						'UT'=>'Utah',
+						'VT'=>'Vermont',
+						'VA'=>'Virginia',
+						'WA'=>'Washington',
+						'WV'=>'West Virginia',
+						'WI'=>'Wisconsin',
+						'WY'=>'Wyoming',
+					);*/
+				?>
+					<div class="form-group">
+						<h5>State <span class="text-danger">*</span></h5>
+						<div class="controls">
+
+					<input type="text" name="state" id="state" class="form-control" required="" value="{{ $editData->state }}" > 
+		 
+					</div>		 
+					  </div>
+				  
+				</div> <!-- End Col md 4 --> 
+	
+				 
+		<div class="col-md-4">
+	
+		<div class="form-group">
+			<h5>Zip code<span class="text-danger">*</span></h5>
+			<div class="controls">
+		 <input type="zipcode" name="zipcode" class="form-control" required="" value="{{ $editData->zipcode }}" > 
+		  </div>		 
+		  </div>
+	
+		</div> <!-- End Col md 4 -->
+	
+	
+		<div class="col-md-4">
+	
+			<!--div class="form-group">
+				<h5>State <span class="text-danger">*</span></h5>
+				<div class="controls">
+			 <input type="text" name="state" class="form-control" required="" > 
+			  </div>		 
+			  </div-->
+		  
+		</div> 
+		<!-- End Col md 4 --> 
+	 
+				 
+			 </div> <!-- End 4th Row -->
+
+<div class="row">
+	<div class="col-md-6" >		
+		<div class="form-group">
+			<h5>Profile Image <span class="text-danger">*</span></h5>
+			<div class="controls">
+		 <input type="file" name="image" class="form-control" id="image" >  </div>
+		 </div>
+	
+			 <div class="form-group">
+			<div class="controls">
+		<img id="showImage" src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/no_image.jpg') }}" style="width: 100px; width: 100px; border: 1px solid #000000;"> 
+	
+		 </div>
+		 </div>
+	
+	
+		</div><!-- End Col Md-6 -->
+	
+
+</div> <!-- End Row -->
+
  
   
 							 

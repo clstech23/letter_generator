@@ -16,9 +16,33 @@
     <!-- Style-->  
     <link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('backend/css/skin_color.css') }}">   
+<style>
 
+
+#SignUser{
+	color:#ff8c00; 
+  text-decoration: underline;
+
+}
+
+body {
+      background-image: url("/assets/6411b13262300009bdcec17f.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .text-white {
+    color: #161515 !important;
+}
+
+.b-2 {
+    border: 2px solid #e11212 !important;
+    border-style: dashed !important;
+}
+
+  </style>
 </head>
-<body class="hold-transition theme-primary bg-gradient-primary">
+<body>
    
     <div class="container h-p100">
       
@@ -28,8 +52,8 @@
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-4 col-md-5 col-12">
                         <div class="content-top-agile p-10">
-                            <h2 class="text-white">Get started with Us</h2>
-                            <p class="text-white-50">Sign in to start your session</p>                          
+                            <h2 style="color:red">Get started with Us</h2>
+                            <p style="color:#161515">Sign in to start your session</p>                          
                         </div>
                         <div class="p-30 rounded30 box-shadowed b-2 b-dashed">
    
@@ -67,7 +91,7 @@
             </div>
             <!-- /.col -->
             <div class="col-12 text-center">
-              <button type="submit" class="btn btn-info btn-rounded mt-10">SIGN IN</button>
+              <button type="submit" class="btn btn-info btn-rounded mt-10" style="background-color: #cc0000;">SIGN IN</button>
             </div>
             <!-- /.col -->
           </div>
@@ -84,7 +108,7 @@
     </div>
     
     <div class="text-center">
-        <p class="mt-15 mb-0 text-white">Don't have an account? <a href="{{ route('register') }}" class="text-info ml-5">Sign Up</a></p>
+        <p class="mt-15 mb-0 text-white">Don't have an account? <a href="{{ route('register') }}" id="SignUser">SIGN UP</a></p>
                             </div>
                         </div>
                     </div>

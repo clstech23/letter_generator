@@ -7,13 +7,27 @@
   crossorigin="anonymous">
 <link rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+ 
 
   <style>
     body {
-      background-image: url("/assets/CLSU.png");
+      background-image: url("/assets/CLSU2.png");
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+    .Paymentfooter:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+  .Paymentfooter{
+	background-color:rgb(238, 19, 8);
+	padding:10px; 
+	border-radius:10px; 
+	color:rgb(255, 255, 255); 
+	font-weight: bold;
+
+}
     
     </style>
 </head>
@@ -121,7 +135,7 @@
             ?>
             <br>
             <br>
-            
+            <br>
           <div class='form-row'>
             <div class='col-xs-12 form-group required'>
             <label class='control-label'>Dispute Template</label> 
@@ -191,6 +205,8 @@
             </div>
           </div>
 
+      
+
           <div class='form-row'>
             <div class='col-md-12 error form-group hide'>
               <div class='alert-danger alert'>Please correct the errors and try
@@ -198,7 +214,8 @@
             </div>
           </div>
         </form>
-        @if ((Session::has('success-message')))
+
+     @if ((Session::has('success-message')))
         <div class="alert alert-success col-md-12">{{
           Session::get('success-message') }}</div>
         @endif @if ((Session::has('fail-message')))
@@ -206,9 +223,21 @@
           Session::get('fail-message') }}</div>
         @endif
       </div>
-      <div class='col-md-4'></div>
+      <div class='col-md-4'>
+
+      
+      </div>
     </div>
+    <br>
+    <br>
+      <p class="text-center text-body-secondary"><a href="https://darainedelevante.com/disclaimer" target="_blank" class="Paymentfooter">DISCLAIMER</a> | <a href="https://www.consumerlawsecretsuniversity.com/terms" target="_blank" class="Paymentfooter">TERMS & CONDITIONS</a> 
+        | <a href="https://darainedelevante.com/terms-and-conditions/" class="Paymentfooter" target="_blank">PRIVACY POLICY</a>
+      </p>
+      <br>
+        <p class="text-center text-body-secondary">© 2023 Consumer Law Secrets University Inc.</p>
+      
   </div>
+
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"
     integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
     crossorigin="anonymous"></script>
@@ -216,7 +245,8 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
-  <script>
+
+   <script>
     $(function() {
         $('form.require-validation').bind('submit', function(e) {
           var $form         = $(e.target).closest('form'),

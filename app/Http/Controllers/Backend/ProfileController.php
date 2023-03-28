@@ -25,6 +25,7 @@ class ProfileController extends Controller
     }
 
 
+
     public function ProfileStore(Request $request){
 
     	$data = User::find(Auth::user()->id);
@@ -33,6 +34,11 @@ class ProfileController extends Controller
     	$data->mobile = $request->mobile;
     	$data->address = $request->address;
     	$data->gender = $request->gender;
+		$data->fname = $request->fname;
+///
+		$data->state = $request->state;
+    	$data->city = $request->city;
+    	$data->zipcode = $request->zipcode;
 
     	if ($request->file('image')) {
     		$file = $request->file('image');

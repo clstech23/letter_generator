@@ -15,6 +15,13 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <style>
+            body {
+      background-image: url("/assets/6411b13262300009bdcec17f.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+            </style>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">

@@ -72,8 +72,8 @@
 
   
                   Swal.fire({
-                    title: 'Are you sure?',
-                    text: "Delete This Data?",
+                    title: 'Are you sure,',
+                    text: "You Want To Delete This Letter?",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',

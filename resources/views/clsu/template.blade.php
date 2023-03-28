@@ -1,36 +1,5 @@
 <?php 
-switch ($details->account_name) {
-        
-        case "COB":
-            $accoutdsc = "Credit One Bank";
-            break;
-        case "BOA":
-            $accoutdsc = "Bank Of America";
-            break;
-        case "NFD":
-            $accoutdsc = "Navy Fed";
-            break;
-        }
-
-        switch ($details->agency) {
-        
-        case "EXP":
-            $agencydsc = "Experian";
-            $pob       = "PO Box 9701";
-            $adr       = "Allen, TX 75013";
-            break;
-        case "EQF":
-            $agencydsc = "Equifax Information Services LLC";
-            $pob       = "PO Box 105069";
-            $adr       = "Atlanta, GA 30348";
-            break;
-        case "TRSU":
-            $agencydsc = "TransUnion LLC Consumer Dispute Center";
-            $pob       = "PO Box 2000";
-            $adr       = "Chester, PA 19016";
-            break;
-        }
-    switch ($details->letter) {
+ switch ($details->letter) {
         
     case "ARLR1":
         $dscr = "Account Removal Letter R1";

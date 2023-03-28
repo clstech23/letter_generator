@@ -56,9 +56,7 @@ tr:nth-child(even) {
     <p><b>Address:</b> {{ $details->address }}</p> <br>
     <p>{{ $details->state }}, {{ $details->city }}, {{ $details->zipcode }}</p> <br>
     <p> <b>DATE:</b> {{ $details->date }}</p><br><br>
-    <!--p><b>{{ $agencydsc }}</b></p> <br>
-    <p><b> {{$pob}}</b></p> <br>
-    <p><b>{{$adr}}</b></p> <br><b-->
+    
    
 </div>
 

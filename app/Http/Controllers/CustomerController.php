@@ -56,31 +56,31 @@ class CustomerController extends Controller
         switch ($data->letter) {
 					
             case "ARLR1":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Account Removal Letter R1";
                 break;
             case "ARLR2":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Account Removal Letter R2";
                 break;
             case "ITDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Identity Theft Dispute Letter";
                 break;
             case "NPRRPC":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "No Parking Rule Refusal to Pay Cease and Desist";
                 break;
             case "LPD":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Late Payment Deletion Letter";
                 break;
             case "PIUL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Personal Information Update Letter";
                 break;
             case "ALDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Auto Loan Deletion Letter";
                 break;
             case "MCD":
@@ -89,43 +89,43 @@ class CustomerController extends Controller
                 break;
 
             case "BDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Bankrupcy Deletion Letter";
                 break;
             case "MC":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Medical Collection";
                 break;
             case "REL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Repossession Letter";
                 break;
             case "CDVNL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Cease and Desit Volenti Non Injuria";
                 break;
             case "MDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Mortgage Deletion Letter";
                 break;
             case "SLDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Student Loan Deletion Letter";
                 break;
             case "COL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Charge Off Letter";
                 break;
             case "CSL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Child Support Letter";
                 break;
             case "DVL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Debt Validation Letter";
                 break;
             case "IRL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Inquiry Removal Letter";
                 break;
             
@@ -223,31 +223,31 @@ class CustomerController extends Controller
         switch ($request->input('letter')) {
 					
             case "ARLR1":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Account Removal Letter R1";
                 break;
             case "ARLR2":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Account Removal Letter R2";
                 break;
             case "ITDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Identity Theft Dispute Letter";
                 break;
             case "NPRRPC":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "No Parking Rule Refusal to Pay Cease and Desist";
                 break;
             case "LPD":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Late Payment Deletion Letter";
                 break;
             case "PIUL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Personal Information Update Letter";
                 break;
             case "ALDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Auto Loan Deletion Letter";
                 break;
             case "MCD":
@@ -256,43 +256,43 @@ class CustomerController extends Controller
                 break;
 
             case "BDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Bankrupcy Deletion Letter";
                 break;
             case "MC":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Medical Collection";
                 break;
             case "REL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Repossession Letter";
                 break;
             case "CDVNL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Cease and Desit Volenti Non Injuria";
                 break;
             case "MDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Mortgage Deletion Letter";
                 break;
             case "SLDL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Student Loan Deletion Letter";
                 break;
             case "COL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Charge Off Letter";
                 break;
             case "CSL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Child Support Letter";
                 break;
             case "DVL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Debt Validation Letter";
                 break;
             case "IRL":
-                $amount_dsc = "49";
+                $amount_dsc = "97";
                 $dscr = "Inquiry Removal Letter";
                 break;
             
